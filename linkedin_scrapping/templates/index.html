@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Home </title>
+    </head>
+    <body>
+        <form action="home/" method="POST">
+            {% csrf_token %}
+            <label for="email">Email Id: </label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="password">Password: </label><br>
+            <input type="password" id="password" name="password" ><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+    </html>
